@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Tea Atelier</title>
+<meta name="description" content="A cosy illustrated tea encyclopedia, tasting journal, cabinet, brewing timer, atlas and academy that works offline.">
+<meta name="theme-color" content="#eadcc0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#2a1f15" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tea Atelier">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,0..100;1,9..144,400..700,0..100&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#hub" aria-label="The Tea Atelier, back to the atelier"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 14h17v4a7 7 0 0 1-7 7h-3a7 7 0 0 1-7-7z" fill="var(--sage)"/><path d="M23 16h2a3 3 0 0 1 0 6h-3" stroke="var(--sage)" stroke-width="2" fill="none"/><path d="M12 10c0-3 3-3 3-6M17 10c0-3 3-3 3-6" stroke="var(--ink3)" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M8 27h17" stroke="var(--ink2)" stroke-width="2" stroke-linecap="round"/></svg><span>The Tea Atelier</span></a>
+  <nav class="rooms" id="roomnav" aria-label="Rooms"></nav>
+  <div class="bar-r">
+    <button class="minitimer" id="miniTimer" data-go="brew" hidden aria-label="Brewing timer"></button>
+    <button class="chip-xp" id="xpchip" data-act="rank" aria-label="Your rank and experience"></button>
+    <button class="iconbtn" data-act="settings" aria-label="Settings, install and backups"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></button>
+  </div>
+</header>
+<main id="view"><p style="padding:40px 0;text-align:center">Opening the atelier…</p></main>
+<div class="modal" id="modal" hidden></div>
+<div class="toast" id="toast" aria-live="polite"></div>
+<noscript><p style="padding:20px">The Tea Atelier needs JavaScript to run.</p></noscript>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
